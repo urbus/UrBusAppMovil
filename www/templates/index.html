@@ -1,0 +1,41 @@
+<ion-view hide-back-button="true">
+<ion-nav-title class="bar-header">
+   <div class='header'>
+     <img src='img/logo.png' class='logo logo_white' />
+   </div>
+ </ion-nav-title>
+ <ion-nav-buttons side="right">
+    <a class="button button-icon icon ion-navicon" href="#/app/home" menu-toggle="right"></a>
+  </ion-nav-buttons>
+<ion-nav-bar class="bar-light">
+</ion-nav-bar>
+  <ion-content>
+    <!-- Mapa donde esta el Hotel -->
+    <div id="map" data-tap-disabled="true"></div>
+    <!--<ion-list>
+      <ion-item ng-repeat="alerta in alertas | limitTo:10">
+        <a class="item item-avatar" href="#">
+          <img src="{{alerta.col_tipo | TipoBus}}">
+          <h2>Ruta 2</h2>
+          <p>Velocidad: {{alerta.col_velocidad}} Km/hr</p>
+        </a>
+      </ion-item>
+    </ion-list>-->
+  </ion-content>
+  <ion-footer-bar align-title="left" class="bar-ligth">
+    <div class="row">
+      <div class="col caja_1">
+          <span class="Tiempo">{{Velocidad}}</span>
+          <i class="icon ion-clock icon-reloj"></i>
+          <span class="label_tiempo">Tiempo Aporx.</span>
+      </div>
+      <div class="col caja_2">
+        <i class="icon ion-map icon-reloj"></i>
+        <select id="cb_ruta">
+          <option value="2">Ruta 1</option>
+          <option value="3">Ruta 2</option>
+        </select>
+      </div>
+    </div>
+  </ion-footer-bar>
+</ion-view>
